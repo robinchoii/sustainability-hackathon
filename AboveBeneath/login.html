@@ -5,6 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link href="https://fonts.googleapis.com/css?family=Alegreya:400i|Roboto+Mono|Stint+Ultra+Expanded" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 
 </head>
 <body class="login">
@@ -14,7 +18,7 @@
 	<hr>
 	<h3>For both Users and Organizations</h3>
 	<div class="row">
-		<form action="userdashboard.html" class="col-lg-6" name="myForm">
+		<form action="userdashboard.html" class="col-lg-6" name="myForm" id="myForm">
 			<div class="form-group">
 			<br>
 			<label>
@@ -30,7 +34,7 @@
 		</div>
 		<div class="form-group">
 			<label>
-				<input class="forrm-control" type="checkbox" name="choice" value="index3.html">
+				<input  type="checkbox" name="org" id="org" value="index3.html">
 				   Are you an organization ?
 			</label>
 		</div>
@@ -42,10 +46,13 @@
 	</div>
 </div>
 </body>
-<script>
-function formaction(checkbox){
-    document.getElementById("myForm").action = checkbox.value;
-}
-
-</script>
+ <script>
+  $(function() {
+   $('#myForm').submit(function(){
+     var org = $('#org').val();
+     console.log(org)
+     $(this).attr('action', org );
+   });
+  });
+ </script>
 </html>
