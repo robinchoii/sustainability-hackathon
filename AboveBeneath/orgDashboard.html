@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Organization Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link href="https://fonts.googleapis.com/css?family=Alegreya:400i|Roboto+Mono|Stint+Ultra+Expanded" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+	<style>body{background-image: url("img/6.jpg");}</style>
+
+</head>
+<body class="orgDashboard">
+	<div class = "container">
+		<center>
+		<h2 id="header"> Your Dashboard </h2>
+		</center>
+		<hr>
+
+		<form>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="box">
+					<center>
+					<h3><u>Organization Details</u></h3>
+					</center>
+
+					<div class="form-group">
+						Address: 1234 Microsoft Way, Redmond, WA 98052 
+					</div>
+					<div class="form-group">
+						<label>
+							Preferred E-Mail: 
+							<input class="form-control" type="text" name="">
+						</label>
+					</div>
+
+					<div class="form-group">
+						<label>
+							Preferred Time of Delivery:
+								<select>
+									<option>8:00AM - 9:00AM</option>
+									<option>10:00AM - 11:00AM</option>
+									<option>12:00PM - 1:00PM</option>
+									<option>1:00PM - 2:00PM</option>
+									<option>2:00PM - 3:00PM</option>
+									<option>3:00AM - 4:00PM</option>
+									<option>4:00PM - 5:00PM</option>
+								</select>
+						</label>
+					</div>
+
+					<div class="form-group">
+						<label>
+							Actual Time of Delivery: 
+							<input class="form-control" type="text" name="">
+						</label>
+					</div>
+
+        			<button id='submit-donation'type='submit' class='btn btn-success'>Submit</button>
+
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="box">
+						<center>
+							<h3><u>Stats:</u></h3>
+						</center>
+						<div class="form-group">
+							15 boxes delivered <br>
+							100 pounds of food
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h3>Other food banks near you:</h3>
+
+		</form>
+	</div>
+</body>
+</html>
