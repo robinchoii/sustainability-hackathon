@@ -180,7 +180,7 @@ a:focus {
 	line-height: 2;
 	max-width: 500px;
 	margin: 1em auto 0;
-	color: #58616a;
+	color: #000000;
 	background: #fffe8d;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -253,7 +253,7 @@ a:focus {
 	display: inline-block;
 	padding: 0 0.5em;
 	line-height: 1.5;
-	color: #344160;
+	color: #000000;
 	background: #fffe8d;
 	-webkit-transition: color 0.3s, background 0.3s;
 	transition: color 0.3s, background 0.3s;
@@ -261,8 +261,8 @@ a:focus {
 
 .featured-list__link:hover .featured-list__title,
 .featured-list__link:focus .featured-list__title {
-	color: #fffe8d;
-	background: #344160;
+	color: #FFA500;
+	background: #fffe8d;
 }
 
 /* Codrops header */
@@ -331,12 +331,14 @@ a:focus {
 /* Demo links */
 
 .codrops-demos {
-	margin: 0 0 0 auto;
+	position:absolute;
+	top:10px;
+	right:-70px;
 }
 
 .codrops-demos a {
 	font-weight: 700;
-	font-size: 0.65em;
+	font-size: 1em;
 	line-height: 1;
 	display: inline-block;
 	margin: 0 2em 0 0;
@@ -418,7 +420,7 @@ a:focus {
 }
 
 .landing-header__title span {
-	color: #344160;
+/*	color: #344160;*/
 	-webkit-transition-timing-function: cubic-bezier(1, 0.005, 0.33, 1);
 	transition-timing-function: cubic-bezier(1, 0.005, 0.33, 1);
 	-webkit-animation-name: floatAround-1;
@@ -638,13 +640,6 @@ a:focus {
 	.codrops-demos {
 		margin: 0 0 0 0.5em;
 		width: 100%;
-	}
-	.codrops-demos::after {
-		content: 'Tap anywhere to turn on sound';
-		display: inline-block;
-		margin: 1em 0 0 0;
-		font-weight: bold;
-		color: #fffe8d;
 	}
 	.landing-header__title {
 		font-size: 2.5em;
