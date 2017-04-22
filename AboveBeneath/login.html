@@ -5,15 +5,22 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link href="https://fonts.googleapis.com/css?family=Alegreya:400i|Roboto+Mono|Stint+Ultra+Expanded" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 
 </head>
 <body class="login">
 <div>
-	<h2 id="header" style="margin-left: 40% ; ">Sign in</h2>
+	<div class="container containerSignIn">
+	<h2 id="header">Sign in</h2>
 	<hr>
+
 	<div class="containerSignIn">
-		<form action="dashboard.html">
 		<h3>For both Users and Organizations</h3>
+	<div class="row">
+		<form action="userDashboard.html" class="col-lg-6" name="myForm">
 			<div class="form-group">
 			<br>
 			<label>
@@ -27,9 +34,28 @@
 				<input class="form-control" type="Password">
 			</label>
 		</div>
+		<div class="form-group">
+			<label>
+				<input  type="checkbox" name="org" id="org" value="index3.html">
+				   Are you an organization ?
+			</label>
+		</div>
 			<button class="btn btn-signin active">Submit</button>
-		</form>
+
+		</div>
+	</div>
+
 	</div>
 </div>
 </body>
+ <script>
+  $(function() {
+   $('#myForm').submit(function(){
+     var org = $('#org').val();
+     console.log(org)
+     $(this).attr('action', org );
+   });
+  });
+ </script>
+
 </html>
