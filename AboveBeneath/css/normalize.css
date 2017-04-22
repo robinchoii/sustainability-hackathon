@@ -19,6 +19,9 @@ font-size: 45px;
 
 }
 
+h1{
+	text-shadow: 2px 2px black;
+}
 form{
 	font-family: 'Stint Ultra Expanded', cursive;
 }
