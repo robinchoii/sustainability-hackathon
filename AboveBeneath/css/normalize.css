@@ -9,6 +9,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 	background-color: rgba(200,200,220,0.7);
 }
 
+.btn-signin{
+	background-color: rgba(200,200,200,0.9);
+}
+
 #header  {
 font-family: 'Alegreya', serif;
 font-size: 45px;
@@ -18,7 +22,7 @@ font-size: 45px;
 form{
 	font-family: 'Stint Ultra Expanded', cursive;
 }
-.container{
+.containerSignIn{
 	margin-left: 35%;
 	font-size: 25px;
 }
