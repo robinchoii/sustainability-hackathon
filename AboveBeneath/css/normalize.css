@@ -11,10 +11,20 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 #header  {
 font-family: 'Alegreya', serif;
-font-size: 40px;
+font-size: 45px;
 
 }
 
 form{
 	font-family: 'Stint Ultra Expanded', cursive;
+}
+.container{
+	margin-left: 35%;
+	font-size: 25px;
+}
+
+.login{
+	background-image: url(https://source.unsplash.com/5tpf6dSY6WU);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
