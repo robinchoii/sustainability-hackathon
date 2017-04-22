@@ -23,12 +23,15 @@ form{
 	font-family: 'Stint Ultra Expanded', cursive;
 }
 .containerSignIn{
-	margin-left: 35%;
 	font-size: 25px;
 }
 
 .login{
-	background-image: url(https://source.unsplash.com/5tpf6dSY6WU);
+	background-image: url(https://source.unsplash.com/v3bWNXeInQA);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.nav-custom{
+	font-size: 20px;
 }
